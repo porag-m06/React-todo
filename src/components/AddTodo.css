@@ -1,8 +1,8 @@
 form {
-  background-color: red;
   height: 40px;
   text-align: center;
   position: relative;
+  margin-top: 15px;
 }
 
 form input {
@@ -12,11 +12,19 @@ form input {
   width: 95%;
   border: none;
   border-radius: 5px;
-  box-shadow: 0 0 7px 5px rgb(177, 173, 173);
+  box-shadow: 0 0 5px 3px rgb(177, 173, 173);
 }
 
 form button {
   position: absolute;
-  top: 25%;
-  right: 8px;
+  top: 28%;
+  right: 6px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn {
+  width: 18px;
+  height: 17px;
 }

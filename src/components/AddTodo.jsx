@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './AddTodo.css';
 /* eslint-disable jsx-a11y/control-has-associated-label */
-import { BsFillHouseAddFill } from 'react-icons/bs';
+import { GrAddCircle } from 'react-icons/gr';
 import PropTypes from 'prop-types';
 
 function AddTodo({ addTodoItem }) {
@@ -29,10 +29,11 @@ function AddTodo({ addTodoItem }) {
         <input
           type="text"
           id="add-todo-input"
+          placeholder="Add todo..."
           value={title}
           onChange={handleChange}
         />
-        <button type="submit"><BsFillHouseAddFill /></button>
+        <button type="submit"><GrAddCircle className="btn" /></button>
       </form>
       <span>{message}</span>
     </>
