@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import TodoListItem from './TodoListItem';
+import './TodoList.css';
 
 function TodoList({ todosProps, handleChange, delTodo }) {
   return (
-    <ul>
+    <ul className="list">
       {todosProps.map((todo) => (
         <TodoListItem
           key={todo.id}

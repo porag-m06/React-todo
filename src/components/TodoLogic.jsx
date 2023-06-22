@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import AddTodo from './AddTodo';
 import TodoList from './TodoList';
+import './TodoLogic.css';
 
 function TodoLogic() {
   const [todos, setTodos] = useState([
@@ -50,7 +51,7 @@ function TodoLogic() {
   };
 
   return (
-    <div>
+    <div className="top-div">
       <AddTodo addTodoItem={addTodoItem} />
       <TodoList todosProps={todos} handleChange={handleChange} delTodo={delTodo} />
     </div>

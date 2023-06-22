@@ -1,0 +1,15 @@
+.item {
+  list-style: none;
+  background-color: rgb(212, 212, 212);
+  margin: 0 0 5px 0;
+  height: 30px;
+  border-radius: 5px;
+}
+
+input[type="checkbox" i] {
+  margin: 8px 3px 3px 4px;
+}
+
+.icheck {
+  margin-top: 8px;
+}

@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './TodoListItem.css';
 
 function TodoListItem({ itemProp, handleChange, delTodo }) {
   return (
-    <li>
+    <li className="item">
       <input
         type="checkbox"
+        className="icheck"
         checked={itemProp.completed}
         onChange={() => handleChange(itemProp.id)}
       />
