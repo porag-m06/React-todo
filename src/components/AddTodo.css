@@ -1,0 +1,22 @@
+form {
+  background-color: red;
+  height: 40px;
+  text-align: center;
+  position: relative;
+}
+
+form input {
+  margin-top: 3px;
+  padding-left: 10px;
+  height: 83%;
+  width: 95%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 7px 5px rgb(177, 173, 173);
+}
+
+form button {
+  position: absolute;
+  top: 25%;
+  right: 8px;
+}

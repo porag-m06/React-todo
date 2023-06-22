@@ -1,4 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import './AddTodo.css';
+/* eslint-disable jsx-a11y/control-has-associated-label */
+import { BsFillHouseAddFill } from 'react-icons/bs';
+import PropTypes from 'prop-types';
 
 function AddTodo({ addTodoItem }) {
   const [title, setTitle] = useState('');
@@ -22,13 +26,21 @@ function AddTodo({ addTodoItem }) {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Add Todo..." value={title}
-          onChange={handleChange} />
-        <button>Submit</button>
+        <input
+          type="text"
+          id="add-todo-input"
+          value={title}
+          onChange={handleChange}
+        />
+        <button type="submit"><BsFillHouseAddFill /></button>
       </form>
       <span>{message}</span>
     </>
   );
 }
 
-export default AddTodo
+AddTodo.propTypes = {
+  addTodoItem: PropTypes.func.isRequired,
+};
+
+export default AddTodo;

@@ -1,11 +1,9 @@
-import React, {useState} from 'react'
-import AddTodo from './AddTodo'
-import TodoList from './TodoList'
-import { v4 as uuidv4 } from "uuid";
-
+import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
+import AddTodo from './AddTodo';
+import TodoList from './TodoList';
 
 function TodoLogic() {
-
   const [todos, setTodos] = useState([
     {
       id: uuidv4(),
@@ -25,31 +23,27 @@ function TodoLogic() {
   ]);
 
   const handleChange = (id) => {
-    setTodos((prevState) =>
-      prevState.map((todo) => {
-        if (todo.id === id) {
-          return {
-            ...todo,
-            completed: !todo.completed,
-          };
-        }
-        return todo;
-      })
-    );
+    setTodos((prevState) => prevState.map((todo) => {
+      if (todo.id === id) {
+        return {
+          ...todo,
+          completed: !todo.completed,
+        };
+      }
+      return todo;
+    }));
   };
 
   const delTodo = (id) => {
     setTodos([
-      ...todos.filter((todo) => {
-        return todo.id !== id;
-      }),
+      ...todos.filter((todo) => todo.id !== id),
     ]);
   };
-  
+
   const addTodoItem = (title) => {
     const newTodo = {
       id: uuidv4(),
-      title: title,
+      title,
       completed: false,
     };
     setTodos([...todos, newTodo]);
@@ -57,10 +51,10 @@ function TodoLogic() {
 
   return (
     <div>
-        <AddTodo addTodoItem={addTodoItem}/>
-        <TodoList todosProps={todos} handleChange={handleChange} delTodo={delTodo}/>
+      <AddTodo addTodoItem={addTodoItem} />
+      <TodoList todosProps={todos} handleChange={handleChange} delTodo={delTodo} />
     </div>
-  )
+  );
 }
 
-export default TodoLogic
+export default TodoLogic;
