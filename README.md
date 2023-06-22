@@ -12,10 +12,8 @@
 # 📗 Table of Contents
 
 - [React-todo](#about-project)
-- [📗 Table of Contents](#-table-of-contents-)
-- [📖 React-todo](#-built-with-)
-  - [🛠 Built With React](#-built-with-)
-    - [React Instructions ](#react-stack-)
+  - [🛠 Built With React](#built-with)
+    - [React Instructions ](#react-stack)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
