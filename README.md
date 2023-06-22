@@ -11,7 +11,7 @@
 
 # 📗 Table of Contents
 
-- [React-todo](#React-todo)
+- [React-todo](#about-project)
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 React-todo](#-React-todo)
   - [🛠 Built With React](#-built-with-)
@@ -35,7 +35,7 @@
   - [📝 License ](#-license-)
 
 
-# 📖 The Math magicians<a name="about-project"></a>
+# 📖 The-React-Todo <a name="about-project"></a>
 
 This project **"React-todo"** is a project using React: Components, Events, Props & more to have a strong base on React JS.
 
