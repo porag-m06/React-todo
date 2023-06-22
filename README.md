@@ -11,11 +11,9 @@
 
 # 📗 Table of Contents
 
-- [React-todo](#React-todo)
-- [📗 Table of Contents](#-table-of-contents)
-- [📖 React-todo](#-React-todo)
-  - [🛠 Built With React](#-built-with-)
-    - [React Instructions ](#react-stack-)
+- [React-todo](#about-project)
+  - [🛠 Built With React](#built-with)
+    - [React Instructions ](#react-stack)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
@@ -35,7 +33,7 @@
   - [📝 License ](#-license-)
 
 
-# 📖 The Math magicians<a name="about-project"></a>
+# 📖 The-React-Todo <a name="about-project"></a>
 
 This project **"React-todo"** is a project using React: Components, Events, Props & more to have a strong base on React JS.
 
