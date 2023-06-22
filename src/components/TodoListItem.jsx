@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './TodoListItem.css';
+import { FaTrashAlt } from 'react-icons/fa';
 
 function TodoListItem({ itemProp, handleChange, delTodo }) {
   return (
@@ -11,8 +12,10 @@ function TodoListItem({ itemProp, handleChange, delTodo }) {
         checked={itemProp.completed}
         onChange={() => handleChange(itemProp.id)}
       />
-      <button type="button" onClick={() => delTodo(itemProp.id)}>Delete</button>
       {itemProp.title}
+      <button type="button" onClick={() => delTodo(itemProp.id)}>
+        <FaTrashAlt />
+      </button>
     </li>
   );
 }
